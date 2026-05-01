@@ -353,6 +353,7 @@ h1 {
     color: black;
     box-shadow: 0 0 15px orange;
 }
+
 @media screen and (max-width: 768px) {
 
   /* HEADER */
