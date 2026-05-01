@@ -1,0 +1,355 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: black;
+  color: white;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background-color: black;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: orange;
+}
+
+.nav {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav li {
+    display: inline-block;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.nav a:hover {
+    color: orange;
+}
+
+/* MAIN LAYOUT */
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  height: 85vh;
+  padding: 0 60px;
+}
+
+/* IMAGE LEFT */
+.image img {
+  width: 250px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 50% / 60%; /* OVAL */
+  
+}
+
+/* TEXT RIGHT */
+.content h3 {
+  font-size: 22px;
+}
+
+.content h1 {
+  font-size: 45px;
+  color: orange;
+}
+
+.content h2 {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.content span {
+  color: orange;
+}
+
+.content p {
+  max-width: 500px;
+  line-height: 1.6;
+}
+
+/* BUTTON */
+button {
+  margin-top: 20px;
+  padding: 10px 25px;
+  border: none;
+  background: orange;
+  color: white;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: white;
+  color: orange;
+}
+
+/*about*/
+
+.about{
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+}
+.a1{
+    color: orange;
+
+    display: inline-block;
+}
+.fd2{
+    font-size: 20px;
+}
+.ed{
+     color: white;
+    text-align: center;
+    padding-top: 30px;
+}
+.ed2{
+    color: orange;
+   
+    display: inline-block;
+}
+.ed1{
+    font-size: 20px;
+}
+#skills {
+  padding: 40px;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+#skills h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: orange;
+  display: inline-block;
+ 
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.skill-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 2px solid orange;
+  background-color: black;
+  color: white;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.skill-btn:hover {
+  color: orangered;
+  transform: scale(1.05);
+
+}
+.cn1{
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+}
+.cn{
+    color: orange;
+    display: inline-block;
+}
+.btn1{
+    color: orange;
+    padding-left: 700px;
+    padding-top: 40px;
+
+
+}
+.btn1 ul{
+     display: flex;
+    list-style: none;
+    gap: 30px;
+    padding-right:30px ;
+}
+.btn1 ul a{
+    text-decoration: none;
+    color: orange;
+    display: inline-block;
+    position: relative;
+    padding: 12px 24px;
+    color: orange;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid orange;
+    border-radius: 30px;
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.3s ease-in-out;
+
+}
+
+.btn1 ul li a:hover{
+    background: rgba(0,240,255,0.1);
+    box-shadow: 0 0 15px #ff6600,0 0 30px #ffd000;
+    color: #fff;
+}
+
+/*service*/
+
+h1 {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 36px;
+      color: orange;
+    }
+
+    .services-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .card {
+        background-color: #111;
+      border-radius: 12px;
+      padding: 25px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease;
+      border-left:  5px solid orangered;
+
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      color: orange;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+/*PROJECT*/
+
+
+.h11 {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 36px;
+      color: orange;
+    }
+
+    .projects-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .project-card {
+      background-color: #111;
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+      border-left: 5px solid orangered;
+      transition: transform 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .project-card h3 {
+      color: orange;
+      margin-bottom: 10px;
+    }
+
+    .project-card p {
+      color: #ccc;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .project-card a {
+      display: inline-block;
+      margin-top: 10px;
+      color: #fff;
+      text-decoration: none;
+      background: linear-gradient(45deg, orange, orangered);
+      padding: 8px 15px;
+      border-radius: 20px;
+      transition: background 0.3s;
+    }
+
+/* Contact Section */
+.contact-text {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    font-style:italic;
+    line-height: 1.8;
+    width: 70%;
+    margin: auto;
+    padding-top: 20px;
+}
+
+/* Button Styling */
+.contact-btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 30px;
+    background-color: black;
+    color: orange;
+    border: 2px solid orange;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    
+    transition: 0.3s ease-in-out;
+}
+
+.contact-btn:hover {
+    background-color: orange;
+    color: black;
+    box-shadow: 0 0 15px orange;
+}
